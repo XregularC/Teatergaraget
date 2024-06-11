@@ -18,7 +18,16 @@ header h1 {
     margin: 0;
 }
 
-section {
+.content {
+    display: flex;  /* Enables Flexbox */
+    justify-content: space-around; /* Spreads out the children evenly */
+    align-items: start; /* Aligns items at the top */
+    padding: 20px;
+}
+
+#team {
+    text-align: center;
+    width: 300px;
     margin: 20px;
     padding: 20px;
     background: white;
@@ -26,17 +35,11 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.profile {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-    margin: 10px;
-}
-
-.profile img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+#members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjusted to 2 columns */
+    grid-template-rows: auto; /* Auto-adjust rows based on content */
+    text-align: center; /* Centering text within the grid */
 }
 
 footer {
@@ -49,3 +52,4 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
