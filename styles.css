@@ -18,6 +18,10 @@ header h1 {
     margin: 0;
 }
 
+section h2 {
+    text-align: center;
+}
+
 .content {
     display: flex;  /* Enables Flexbox */
     justify-content: space-around; /* Spreads out the children evenly */
